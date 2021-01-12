@@ -2,11 +2,11 @@ function dispatchLanguage()
 {
     switch(navigator.language) {
         case "en":
-            window.open("en/index.html"); 
+            window.location.replace("en/index.html"); 
             break;
         case "fr":
         default:
-            window.open("fr/index.html"); 
+            window.location.replace("fr/index.html"); 
             break;
     } 
 }
