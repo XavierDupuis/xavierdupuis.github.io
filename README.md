@@ -1,2 +1,2 @@
 # XavierDupuis.github.io
-https://xavierdupuis.github.io/Website/
+https://xavierdupuis.github.io
