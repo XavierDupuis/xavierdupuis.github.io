@@ -1,4 +1,32 @@
-<html>
-  <script src="scripts/language.js"></script>
-  <body onload="dispatchLanguage()"></body>
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Projects</title>
+    
+        <script src="components/c-card.js"></script>
+        <script src="components/c-card-project.js"></script>
+        <script src="components/c-list.js"></script>
+        <script src="components/c-list-projects.js"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="grid-container">
+            <c-list-projects id="liste-projects" item_selectionneh="0"></c-list-projects>
+        </div>
+    </body>
+    <script>
+            $.ajaxSetup({
+                async: false
+            });
+            $.getJSON('./ressources/data/projects.json', function (data) {
+                jData = data;
+            })
+            this.projects = jData;
+
+            localStorage.setItem("projects", JSON.stringify(this.projects));
+    </script>
 </html>

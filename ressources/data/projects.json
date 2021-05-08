@@ -1,0 +1,65 @@
+[
+    {
+        "name": "MultiMake",
+        "description": "LOREM IPSUM",
+        "logo": "https://raw.githubusercontent.com/XavierDupuis/MultiMake/main/assets/title.png",
+        "url": "https://github.com/XavierDupuis/MultiMake",
+        "wip": false,
+        "languages" : [  "MS-DOS (Batch)", "GNU Make" ],
+        "show": true
+    },
+    {
+        "name": "SaveMyPlant",
+        "description": "LOREM IPSUM",
+        "logo": "https://image.flaticon.com/icons/png/512/628/628283.png",
+        "url": "https://github.com/XavierDupuis/Hackatown2021",
+        "wip": false,
+        "languages" : [ "Python", "Angular", "TensorFlow.js" ],
+        "show": true
+    },
+    {
+        "name": "Custom DiscordBot",
+        "description": "LOREM IPSUM",
+        "logo": "https://mlpnk72yciwc.i.optimole.com/w:350/h:350/q:auto/rt:fill/g:ce/https://www.bleedingcool.com/wp-content/uploads/2018/04/Discord-logo.jpg",
+        "url": "https://github.com/XavierDupuis/DiscordBot",
+        "wip": true,
+        "languages" : [ "Python" ],
+        "show": true
+    },
+    {
+        "name": "SCRUMTaskManager",
+        "description": "LOREM IPSUM",
+        "logo": "https://images.pexels.com/photos/7376/startup-photos.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+        "url": "https://xavierdupuis.github.io/SCRUMTaskManager/",
+        "wip": false,
+        "languages" : [ "C", "C++" ],
+        "show": true
+    },
+    {
+        "name": "Backup Tool",
+        "description": "LOREM IPSUM",
+        "logo": "https://images.pexels.com/photos/6429123/pexels-photo-6429123.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+        "url": "https://github.com/XavierDupuis/BackupTool/",
+        "wip": false,
+        "languages" : [ "MS-DOS (Batch)" ],
+        "show": true
+    },
+    {
+        "name": "PasswordManager",
+        "description": "LOREM IPSUM",
+        "logo": "https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+        "url": "https://github.com/XavierDupuis/PasswordManager/",
+        "wip": false,
+        "languages" : [ "MS-DOS (Batch)" ],
+        "show": true
+    },
+    {
+        "name": "Encrypter",
+        "description": "LOREM IPSUM",
+        "logo": "https://images.pexels.com/photos/39624/padlock-lock-chain-key-39624.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+        "url": "https://github.com/XavierDupuis/Encrypter-PythonOOP/",
+        "wip": false,
+        "languages" : [ "Python" ],
+        "show": true
+    }
+]
