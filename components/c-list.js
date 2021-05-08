@@ -19,6 +19,16 @@ class CList extends HTMLElement {
           padding-left: 15%;
         }
 
+        #attachListe {
+          display:flex;
+          flex-wrap:wrap;
+          justify-content:center;
+        }       
+        
+        #attachListe > c-card-project{
+          //max-width:33%
+        }
+
         </style>
         <div class="en-tete col-6" >
           <spam id="titre"></spam>

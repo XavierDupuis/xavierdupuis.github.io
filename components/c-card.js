@@ -6,22 +6,6 @@ class CCard extends HTMLElement {
 
 
         this._root.innerHTML = `<style> 
-        
-        /* grid */
-        * {
-          box-sizing: border-box;
-        }
-        
-        .row::after {
-          content: "";
-          clear: both;
-          display: table;
-        }
-        
-        [class*="col-"] {
-          float: left;
-        }
-        
         .col-1 {
           width: 8.33%;
         }
@@ -61,46 +45,55 @@ class CCard extends HTMLElement {
         
         
         /*cards*/
-        .en_tete {
+        /*.en_tete {
           margin-top: 30px;
           font-family: Arial, Helvetica, sans-serif;
           font-size: 2em;
           text-align: left;
           padding-left: 8%;
-        }
+        }*/
         
         .card {
-          margin-left: 15% !important;
-          margin-right: 20% !important;
-          margin-top: 5% !important;
-          margin-bottom: 1% !important;
-          background-color: lightgray;
+          border-radius:6px;
+          background-color: var(--main-decor-color);
+          margin:20px;
+          display:flex;
+          min-width:300px;
+        }
+
+        .card:hover{
+          box-shadow: 0 0 1.5rem gray;
         }
         
-        .imgProject {
-          height:auto;
-          padding-top:20%;
-          max-width:160px;
-          width:90%;
+        .img-wrapper{
+          text-align:center;
+          margin:auto;
+          padding:20px;
         }
-  
+
+        .img-project {
+          width:90%;
+          max-width:160px;
+          height:auto;
+        }
+        
         h3,p{
           font-family:"Segoe UI",Arial,sans-serif;
           font-weight:400;margin:10px 0
         }
 
-        .container {
+        /*.container {
           padding:0.01em 16px
-        }
+        }*/
 
-        .selected {
+        /*.selected {
           background-color: grey;
-        }
+        }*/
 
   </style>
         <div class="row card" id="entity">
-          <div class="col-3">
-            <img id="logo" src="./assets/PixelGalaxy.png" alt="img" class="imgProject">
+          <div class="col-3 img-wrapper">
+            <img id="logo" src="./assets/PixelGalaxy.png" alt="img" class="img-project">
           </div>
           <div class="col-9">
             <header class="container">

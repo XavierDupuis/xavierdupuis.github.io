@@ -35,7 +35,7 @@ class CListProjects extends CList {
             divProject.setAttribute("name",          project.name);
             divProject.setAttribute("description",   project.description);
             divProject.setAttribute("url",           project.url);
-            divProject.setAttribute("wip",           project.wip);
+            divProject.setAttribute("wip",           project.wip ? 'Project is work in progress (WIP)' : 'Project is completed');
             divProject.logo = project.logo;
             divProject.url = project.url;
             let languages = "";
@@ -81,7 +81,9 @@ class CListProjects extends CList {
                 liste_etudes.injectEtudes(thisproject.etudes, 0);//injecte les etudes du project sur cette ficheproject
             });*/
 
-            this.result.appendChild(divProject);
+            if(project.show){
+                this.result.appendChild(divProject);
+            }
         }
     }
 }
