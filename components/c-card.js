@@ -58,7 +58,15 @@ class CCard extends HTMLElement {
           background-color: var(--main-decor-color);
           margin:20px;
           display:flex;
-          min-width:300px;
+          //min-width:300px;
+          width: 500px;
+          height: 90%;
+        }
+
+        @media only screen and (max-width: 570px) {
+          .card {
+            width: 90%;
+          }
         }
 
         .card:hover{
