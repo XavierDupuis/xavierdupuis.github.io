@@ -23,12 +23,11 @@ class CList extends HTMLElement {
           display:flex;
           flex-wrap:wrap;
           justify-content:center;
-          align-items:stretch;
+          //align-items:stretch;
         }       
         
         #attachListe > c-card-project{
-          //max-width:33%
-          align-items:stretch;
+          //align-items:stretch;
         }
 
         </style>

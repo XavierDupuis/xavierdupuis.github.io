@@ -54,6 +54,7 @@ class CCard extends HTMLElement {
         }*/
         
         .card {
+          text-align: justify;
           border-radius:6px;
           background-color: var(--main-decor-color);
           margin:20px;
@@ -91,18 +92,16 @@ class CCard extends HTMLElement {
           margin:10px 0
         }
 
-
-
-        /*.container {
-          padding:0.01em 16px
-        }*/
+        .container {
+          padding:10px
+        }
 
         /*.selected {
           background-color: grey;
         }*/
 
   </style>
-        <div class="row card" id="entity">
+        <div class="card" id="entity">
           <div class="col-3 img-wrapper">
             <img id="logo" src="./assets/PixelGalaxy.png" alt="img" class="img-project">
           </div>
