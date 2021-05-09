@@ -47,7 +47,7 @@ class CCard extends HTMLElement {
         /*cards*/
         /*.en_tete {
           margin-top: 30px;
-          font-family: Arial, Helvetica, sans-serif;
+          font-family: var(--main-font-family);
           font-size: 2em;
           text-align: left;
           padding-left: 8%;
@@ -78,9 +78,12 @@ class CCard extends HTMLElement {
         }
         
         h3,p{
-          font-family:"Segoe UI",Arial,sans-serif;
-          font-weight:400;margin:10px 0
+          font-family:var(--main-font-family);
+          //font-weight:400;
+          margin:10px 0
         }
+
+
 
         /*.container {
           padding:0.01em 16px

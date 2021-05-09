@@ -10,7 +10,7 @@ class CList extends HTMLElement {
     this._root.innerHTML = `
         <style>  
         .en-tete {
-          font-family: Arial, Helvetica, sans-serif;
+          font-family: var(--main-font-family);
           font-size: 200%;
           padding-top: 20px;
         }
