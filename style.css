@@ -1,7 +1,15 @@
+header {
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+}
+
 :root{
   --main-background: #0b0c0f;
-  --main-fonts-color: #fff;
+  --main-fonts-color: rgb(4, 182, 173);
+  --main-fonts-hover-color: rgb(17, 90, 14);
   --main-decor-color:#00a9e2;
+  --main-decor-hover-color:#00bfff;
   --main-header-background:#21252e;
   --main-font-family:'Poppins', sans-serif;;
 }

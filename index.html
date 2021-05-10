@@ -5,6 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Projects</title>
     
+        <script src="components/c-navbar.js"></script>
+        <script src="components/c-intro.js"></script>
         <script src="components/c-card.js"></script>
         <script src="components/c-card-project.js"></script>
         <script src="components/c-list.js"></script>
@@ -14,17 +16,27 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <c-list-projects id="liste-projects"></c-list-projects>
+        <header>
+            <c-navbar></c-navbar>
+        </header>
+        <c-intro id="intro"></c-intro>
+        <c-list-projects id="projects"></c-list-projects>
     </body>
     <script>
             $.ajaxSetup({
                 async: false
             });
+
             $.getJSON('./ressources/data/projects.json', function (data) {
                 jData = data;
             })
             this.projects = jData;
-
             localStorage.setItem("projects", JSON.stringify(this.projects));
+
+            $.getJSON('./ressources/data/content.json', function (data) {
+                jData = data;
+            })
+            this.content = jData;
+            localStorage.setItem("content", JSON.stringify(this.content));
     </script>
 </html>

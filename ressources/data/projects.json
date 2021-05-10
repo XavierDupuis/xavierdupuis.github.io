@@ -2,7 +2,7 @@
     {
         "name": "MultiMake",
         "description": "none",
-        "logo": "https://raw.githubusercontent.com/XavierDupuis/MultiMake/main/assets/title.png",
+        "logo": "https://raw.githubusercontent.com/XavierDupuis/MultiMake/main/assets/title-2.png",
         "url": "https://github.com/XavierDupuis/MultiMake",
         "wip": false,
         "languages" : [  "MS-DOS (Batch)", "GNU Make" ],

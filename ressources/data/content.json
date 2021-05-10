@@ -1,0 +1,28 @@
+{
+    "name": "Xavier Dupuis",
+    "intro": 
+    { 
+        "fr":
+        [  
+            "Baccalauréat deuxième année",
+            "Études en Génie Logiciel à Polytechnique Montréal",
+            "Passionné de Cybersecurité et Résoudre des problèmes complexes",
+            "Front-End : Angular, Html, CSS, Javascript",
+            "Back-End : C, C++, Python, MS-DOS, Assembly, (Débutant en Java et Rust)"
+        ],
+        "en":
+        [  
+            "Second year Undergraduate",
+            "Studies Software Engineering at Polytechnique Montreal",
+            "Passionnate about Cybersecurity and Resolving complex problems",
+            "Front-End : Angular, Html, CSS, Javascript",
+            "Back-End : C, C++, Python, MS-DOS, Assembly, (Novice in Java and Rust)"
+        ]
+    },
+    "links":
+    {
+        "mail":"xav.dup@outlook.com",
+        "github":"https://github.com/XavierDupuis",
+        "linkedin":"https://www.linkedin.com/in/xavier-dupuis"
+    }
+}

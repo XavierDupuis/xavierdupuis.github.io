@@ -3,17 +3,10 @@ class CListProjects extends CList {
     constructor() {
         super();
         this.nProjects = 0;
-        this.name = 'liste_projects';
     }
 
     connectedCallback() {
         this.projects = JSON.parse(localStorage.getItem("projects"));
-        
-        if (!this.projects || this.projects.length==0 ) {
-            this.shadowRoot.querySelector("#attachListe").innerHTML = "";
-            return;
-        }
-
         this.injectProjects(this.projects);
     }
 

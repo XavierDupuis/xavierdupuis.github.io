@@ -54,9 +54,9 @@ class CCard extends HTMLElement {
         }*/
         
         .card {
-          text-align: justify;
           border-radius:6px;
           background-color: var(--main-decor-color);
+          text-align: justify;
           margin:20px;
           display:flex;
           //min-width:300px;
@@ -71,7 +71,9 @@ class CCard extends HTMLElement {
         }
 
         .card:hover{
+          background-color:var(--main-decor-hover-color);
           box-shadow: 0 0 1.5rem gray;
+          back
         }
         
         .img-wrapper{
@@ -102,10 +104,10 @@ class CCard extends HTMLElement {
 
   </style>
         <div class="card" id="entity">
-          <div class="col-3 img-wrapper">
+          <div class="col-4 img-wrapper">
             <img id="logo" src="./assets/PixelGalaxy.png" alt="img" class="img-project">
           </div>
-          <div class="col-9">
+          <div class="col-8">
             <header class="container">
                 <h3 id="name"></h3>
             </header>
