@@ -8,11 +8,19 @@ class CIntro extends HTMLElement {
             <style>  
             .intro {
               font-family: var(--main-font-family);
-              font-size: 150%;
+              font-size: 120%;
               padding-top: 20px;
               text-align:center;
             }
-          
+
+            hr {
+              height: 3px;
+              width: 150px;
+              border-radius: 5px;
+              background:var(--main-decor-color);
+              border: none;
+            }
+
             </style>
             <div class="intro">
                 <h1 id="name"></h1>

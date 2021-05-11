@@ -1,15 +1,39 @@
-header {
-  z-index: 1;
-  position: fixed;
-  width: 100%;
-}
-
-:root{
+:root {
   --main-background: #0b0c0f;
-  --main-fonts-color: rgb(4, 182, 173);
+  background-color: var(--main-background);
+
+  --main-fonts-color: rgb(247, 247, 247);
   --main-fonts-hover-color: rgb(17, 90, 14);
+  color:var(--main-fonts-color);
+
+  --main-font-family:'Poppins', sans-serif;
+  font-family: var(--main-font-family);
+  
   --main-decor-color:#00a9e2;
   --main-decor-hover-color:#00bfff;
   --main-header-background:#21252e;
-  --main-font-family:'Poppins', sans-serif;;
+
+  font-size: 16px;
+  text-align: center;
+}
+
+body {
+  margin: 0px;
+}
+
+header {
+  opacity: 0;
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+  transition: 0.3s;
+  background-color: var(--main-background);
+}
+
+header:hover {
+  opacity: 0.9;
+}
+
+h1{
+  text-shadow: 0px 0px 40px var(--main-decor-color);
 }

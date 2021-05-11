@@ -14,11 +14,14 @@ class CNavBar extends HTMLElement {
                 color:var(--main-fonts-color);
                 font-size: 200%;
                 padding: 20px;
-                text-decoration:none;
+                padding-left: 10%;
+                padding-right: 10%;
                 text-transform:uppercase;
+                
             }
-
+            
             .button {
+                text-decoration:none;
                 margin:10px;
             }
 

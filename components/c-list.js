@@ -11,12 +11,11 @@ class CList extends HTMLElement {
         <style>  
         .en-tete {
           font-family: var(--main-font-family);
-          font-size: 200%;
           padding-top: 20px;
         }
 
         #titre {
-          padding-left: 15%;
+          
         }
 
         #attachListe {
@@ -32,7 +31,7 @@ class CList extends HTMLElement {
 
         </style>
         <div class="en-tete col-6" >
-          <spam id="titre"></spam>
+          <h2 id="titre"></h2>
         </div>
         <div id="attachListe"></div>
         <div id="attachForm"></div>
