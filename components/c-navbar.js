@@ -51,13 +51,16 @@ class CNavBar extends HTMLElement {
                 </div>
             </div>
         `;
+        this.addEventListener("scroll", function () {
+            console.log("event");
+        });
     }
-  
+    
     static get observedAttributes() {
         return ;
     }
   
-  
+    
     attributeChangedCallback(name, oldValue, newValue) {
         console.log('attributChanged', name, oldValue, newValue);
   
