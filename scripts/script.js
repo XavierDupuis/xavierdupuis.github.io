@@ -1,15 +1,17 @@
-// header scrolling effect
-$(window).on('scroll', function(){
-	if($(window).scrollTop()){
-      $('header').addClass('nav-show');
-		  
-	} 
-	else{
-		$('header').removeClass('nav-show');
-	}
-	   
-})
+window.addEventListener('scroll', () => refreshHeader());
+window.onload = () => refreshHeader();
 
+function refreshHeader(){
+	var st = window.pageYOffset || document.documentElement.scrollTop;
+	if(st == 0){
+		this.document.querySelector('header').setAttribute('class','visible');
+	}
+	else{
+		this.document.querySelector('header').setAttribute('class','');
+	}
+}
+
+/*
 //hamburger
 const navSlide = () => {
 	 const hamburger = document.querySelector(".hamburger");
@@ -35,3 +37,4 @@ const navSlide = () => {
 	}
 
 window.onload = () => navSlide();
+*/

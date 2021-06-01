@@ -13,6 +13,8 @@
   --main-decor-hover-color:#00bfff;
   --main-header-background:#1c2844;
 
+  --main-header-opacity:0.98;
+
   font-size: 16px;
   text-align: center;
 }
@@ -30,8 +32,8 @@ header {
   background-color: var(--main-header-background);
 }
 
-header:hover {
-  opacity: 0.95;
+.visible {
+  opacity: var(--main-header-opacity);
 }
 
 h1 {

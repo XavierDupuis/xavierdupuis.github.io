@@ -17,7 +17,6 @@ class CNavBar extends HTMLElement {
                 padding-left: 10%;
                 padding-right: 10%;
                 text-transform:uppercase;
-                
             }
             
             .button {
@@ -51,8 +50,11 @@ class CNavBar extends HTMLElement {
                 </div>
             </div>
         `;
-        this.addEventListener("scroll", function () {
-            console.log("event");
+        this.addEventListener("mouseover", function () {
+            document.querySelector('header').setAttribute('class','visible')
+        });
+        this.addEventListener("mouseleave", function () {
+            document.querySelector('header').setAttribute('class','')
         });
     }
     
