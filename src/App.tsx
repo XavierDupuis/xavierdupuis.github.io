@@ -4,21 +4,17 @@ import './App.css';
 import { Project } from './projects/project.interface';
 import Projects from './projects/projects-list';
 import { ProjectsList } from './projects/projects-list-data';
+import { SocialList } from './socials/social-list-data';
+import { Social } from './socials/social.interface';
+import { Socials } from './socials/socials-list';
 
 function App(): React.ReactElement {
     const projects: Project[] = ProjectsList;
+    const socials: Social[] = SocialList;
     return (
         <div className="App">
+            <Socials socials={socials} />
             <Projects projects={projects} />
-            {/* <header className="App-header">
-                <img src={logo} className="App-logo" alt="logo" />
-                <p>
-                    Edit <code>src/App.tsx</code> and save to reload.
-                </p>
-                <a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
-                    Learn React
-                </a>
-            </header> */}
         </div>
     );
 }

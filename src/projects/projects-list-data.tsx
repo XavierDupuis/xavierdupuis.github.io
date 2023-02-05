@@ -1,4 +1,6 @@
-export const ProjectsList = [
+import { Project } from './project.interface';
+
+export const ProjectsList: Project[] = [
     {
         id: 335462002,
         node_id: 'MDEwOlJlcG9zaXRvcnkzMzU0NjIwMDI=',

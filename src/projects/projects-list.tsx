@@ -7,7 +7,7 @@ interface Props {
     projects: Project[];
 }
 
-const Projects: React.FC<Props> = ({ projects }) => {
+const Projects: React.FC<Props> = ({ projects }: Props) => {
     const renderProject = (project: Project) => {
         return <ProjectInstance project={project} />;
     };
@@ -16,7 +16,7 @@ const Projects: React.FC<Props> = ({ projects }) => {
         return Math.floor(Math.random() * (max - min) + min);
     };
 
-    const renderProjects = () => {
+    const getProjects = () => {
         const projectsIndexes = [];
         for (let index = 0; index < projects.length; index++) {
             projectsIndexes.push(index);
@@ -35,7 +35,7 @@ const Projects: React.FC<Props> = ({ projects }) => {
     return (
         <div>
             <h1>Projects</h1>
-            <div className="projects">{renderProjects()}</div>
+            <div className="projects">{getProjects()}</div>
         </div>
     );
 };
